@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sonika Bhardwaj's AI, machine learning and data analytics portfolio.">
+  <title>Sonika Bhardwaj | Portfolio</title>
+  <style>
+    :root {
+      --bg: #0b1120;
+      --panel: #121c30;
+      --blue: #60a5fa;
+      --text: #f1f5f9;
+      --muted: #a7b4c8;
+      --border: #26354d;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.7;
+    }
+
+    a { color: var(--blue); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .container { width: min(1050px, 90%); margin: auto; }
+
+    header {
+      position: sticky;
+      top: 0;
+      background: rgba(11, 17, 32, .95);
+      border-bottom: 1px solid var(--border);
+      z-index: 10;
+    }
+
+    nav {
+      min-height: 72px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+    }
+
+    .logo { font-size: 22px; font-weight: 800; }
+    .logo span { color: var(--blue); }
+    .nav-links { display: flex; gap: 20px; font-size: 14px; }
+
+    .hero { padding: 100px 0 85px; }
+    .eyebrow {
+      color: var(--blue);
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      font-size: 12px;
+      font-weight: bold;
+    }
+
+    h1 {
+      font-size: clamp(38px, 7vw, 66px);
+      line-height: 1.12;
+      margin: 18px 0;
+      letter-spacing: -2px;
+    }
+
+    h1 span { color: var(--blue); }
+    .intro { color: var(--muted); max-width: 650px; font-size: 18px; }
+
+    .button {
+      display: inline-block;
+      margin: 14px 10px 0 0;
+      padding: 11px 18px;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+      font-weight: bold;
+    }
+
+    .primary { background: #2563eb; color: white; border-color: #2563eb; }
+
+    section { padding: 60px 0; scroll-margin-top: 75px; }
+    .section-title { font-size: 30px; margin: 0 0 25px; }
+    .muted { color: var(--muted); }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 24px;
+      transition: transform .2s, border-color .2s;
+    }
+
+    .card:hover { transform: translateY(-4px); border-color: var(--blue); }
+    .card h3 { margin-top: 0; }
+    .tag {
+      display: inline-block;
+      color: #bfdbfe;
+      background: #1e3352;
+      border-radius: 5px;
+      padding: 3px 8px;
+      margin: 3px 4px 3px 0;
+      font-size: 12px;
+    }
+
+    .skills { display: flex; flex-wrap: wrap; gap: 10px; }
+    .skills span {
+      padding: 9px 14px;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      background: var(--panel);
+    }
+
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 25px 0;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    @media (max-width: 600px) {
+      .nav-links { gap: 10px; font-size: 12px; }
+      .logo { font-size: 17px; }
+      .grid { grid-template-columns: 1fr; }
+      .hero { padding-top: 70px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="container">
+      <a class="logo" href="#home">SONIKA<span>.DEV</span></a>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero container" id="home">
+      <div class="eyebrow">AI · Machine Learning · Data Analytics</div>
+      <h1>Hello, I'm Sonika<br><span>Bhardwaj.</span></h1>
+      <p class="intro">
+        A Computer Science graduate specializing in Artificial Intelligence
+        and Machine Learning. I enjoy exploring data and building practical
+        technology projects.
+      </p>
+      <a class="button primary" href="#projects">Explore Projects ↗</a>
+      <a class="button" href="#contact">Contact Me</a>
+    </section>
+
+    <section id="about">
+      <div class="container">
+        <h2 class="section-title">About Me<span style="color:#60a5fa">.</span></h2>
+        <div class="card">
+          <p class="muted">
+            I'm a CSE graduate with a specialization in AI and Machine
+            Learning. I'm interested in data analytics, intelligent
+            applications, and continuous learning. My goal is to use
+            technology to solve practical problems.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <div class="container">
+        <h2 class="section-title">Skills<span style="color:#60a5fa">.</span></h2>
+        <div class="skills">
+          <span>Python</span><span>SQL</span><span>Excel</span>
+          <span>Power BI</span><span>Machine Learning</span>
+          <span>TensorFlow</span><span>Data Analysis</span>
+        </div>
+        <p class="muted">Keep only the skills you can confidently explain.</p>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="container">
+        <h2 class="section-title">Featured Projects<span style="color:#60a5fa">.</span></h2>
+        <div class="grid">
+          <article class="card">
+            <h3>🌾 Rice Disease Classifier</h3>
+            <p class="muted">
+              An image-classification project exploring rice leaf disease
+              detection using a deep learning model.
+            </p>
+            <span class="tag">Python</span>
+            <span class="tag">TensorFlow</span>
+            <span class="tag">MobileNetV3Large</span>
+            <p><a href="https://github.com/Sonika-Bhardwaj-source/Rice-Disease-Classifier-"
+              target="_blank" rel="noopener noreferrer">View source code ↗</a></p>
+          </article>
+
+          <article class="card">
+            <h3>📊 YouTube Sentiment Analysis</h3>
+            <p class="muted">
+              A project that analyses YouTube comments and classifies
+              sentiment as positive, negative, or neutral.
+            </p>
+            <span class="tag">Python</span>
+            <span class="tag">YouTube API</span>
+            <span class="tag">Sentiment Analysis</span>
+            <p><a href="https://github.com/Sonika-Bhardwaj-source/YoutubeSentimentAnalysis"
+              target="_blank" rel="noopener noreferrer">View source code ↗</a></p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <h2 class="section-title">Let's Connect<span style="color:#60a5fa">.</span></h2>
+        <p class="muted">I'm happy to connect about technology, projects, and opportunities.</p>
+        <a class="button primary"
+          href="https://www.linkedin.com/in/sonika-bhardwaj-726800300/"
+          target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+        <a class="button"
+          href="https://github.com/Sonika-Bhardwaj-source"
+          target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      © <span id="year"></span> Sonika Bhardwaj · Built with HTML & CSS
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
